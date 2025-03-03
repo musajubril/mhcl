@@ -1,3 +1,4 @@
+"use client"
 import { WhatWeDo } from '@/wwd';
 import Link from 'next/link';
 import React from 'react'
@@ -6,8 +7,10 @@ import { LiaExternalLinkAltSolid } from "react-icons/lia";
 interface PageProps {
     params: { slug: string };
   }
-export default function page({ params }: PageProps) {
-    const slugData = WhatWeDo.find(_=> _.slug===params.slug)
+export default function page({ params }: any) {
+    console.log(React.use(params))
+    const {slug} = React.use<{slug: string}>(params)
+    const slugData = WhatWeDo.find(_=> _.slug===slug)
     console.log(slugData)
   return (
     <div className='px-[120px] max-mobile:px-6 pb-24'>
@@ -29,7 +32,7 @@ export default function page({ params }: PageProps) {
                 <div className="pr-6 pl-8 py-12 shadow gap-10 flex flex-col rounded-2xl">
                     <div className="text-h3">Other Services</div>
                     <div className="flex flex-col gap-8 text-lg">
-                        {WhatWeDo.filter(item=>item.slug!==params.slug).map(item=>(
+                        {WhatWeDo.filter(item=>item.slug!==slug).map(item=>(
                             <Link href={`/what-we-do/${item.slug}`} key={item.slug} className='border-b border-black flex items-center gap-2 justify-between hover:text-primary hover:border-primary transition-all duration-500'>
                                     <div>{item.title}</div>
                                 <div className="">
