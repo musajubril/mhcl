@@ -6,6 +6,7 @@ import PartnersAndClients from "@/components/home/PartnersAndClients";
 import StrategicPlanning from "@/components/home/StrategicPlanning";
 import WhatWeDo from "@/components/home/WhatWeDo";
 import Navbar from "@/components/shared/Navbar";
+import WhyChoose from "@/components/WhyChoose";
 import Image from "next/image";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <HomeAboutUs />
       <StrategicPlanning />
       <CTA />
+      <WhyChoose />
 
       {/* <div className="py-8 w-full flex justify-center gap-12">
         <img src="/img/partners/aero.png" className="h-[46.32px]" alt="" />

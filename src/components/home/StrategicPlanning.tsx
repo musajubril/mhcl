@@ -17,20 +17,20 @@ export default function StrategicPlanning() {
             </div>
             <>
             {
-                WhatWeDo.slice(0,2).map((wwd, i)=>(
-            <div className="flex flex-col gap-8 max-mobile:pb-8" key={i}>
-                <div className="flex flex-col gap-3">
+                WhatWeDo.map((wwd, i)=>(
+            <div className="flex flex-col gap-8 bg-primary/80 hover:bg-white hover:border-primary hover:border-2 hover:text-primary rounded-lg text-[#fff] transition-all transform duration-500 hover:scale-105 items-center justify-center cursor-pointer" key={i}>
+                <div className="flex flex-col gap-3 p-5 items-center justify-center text-center">
                     <div className="">
                         <wwd.icon className=' w-14 h-14' />
                     </div>
-                <div className="text-black text-h4">
+                <div className="text-h4">
                     {wwd.title}
                 </div>
                 </div>
-                    <div className="text-base font-normal text-dark-grey">
+                    {/* <div className="text-base font-normal text-dark-grey">
                         {wwd.description.slice(0,135)}
-                    </div>
-            </div>
+                        </div> */}
+                        </div>
 
                 ))
             }

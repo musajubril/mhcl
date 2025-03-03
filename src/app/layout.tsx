@@ -10,6 +10,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "MHCL",
   description: "Mangroove Hills Consulting Limited",
+  "icons": {
+    icon: "/img/logo/logo_icon.png"
+  }
 };
 
 export default function RootLayout({

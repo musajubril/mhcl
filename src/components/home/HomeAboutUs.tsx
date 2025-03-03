@@ -2,6 +2,13 @@ import React from "react";
 import { Button } from "../ui/button";
 
 export default function HomeAboutUs() {
+  const values = [
+    {letter: "H", details: "High Ethical Standards"},
+    {letter: "I", details: "Integrity"},
+    {letter: "L", details: "Lifelong Client's Loyalty"},
+    {letter: "L", details: "Leadership through learning for our talents"},
+    {letter: "S", details: "Sustainability drives in all our dealing with our valuable clients"},
+  ]
   return (
     <div className="px-[120px] max-mobile:px-6 py-24 ">
       <div className="flex max-mobile:flex-col max-mobile:gap-[50px] justify-between">
@@ -42,6 +49,34 @@ export default function HomeAboutUs() {
                 <Button className="uppercase">
                     Read More
                 </Button>
+            </div>
+            <div className="py-4 grid grid-cols-2 max-mobile:grid-cols-1 gap-8">
+              <div className="">
+              <div className="text-black text-h2">
+                Vision
+              </div>
+              <div className="text-medium text-dark-grey">
+                To become an unrivaled choice for clients in their quest for excellence add to talnet, a place for career fulfillment
+              </div>
+              </div>
+              <div className="">
+              <div className="text-black text-h2">
+                Core Values
+              </div>
+              <div className="text-medium text-dark-grey flex flex-col gap-2">
+                  {
+                    values.map((val, i) => (
+                      <div key={i}>
+                        <div className="flex items-center gap-2">
+                          <div className="text-black font-bold">{val.letter}</div>
+                          <div className="">-</div>
+                          <div className="text-sm">{val.details}</div>
+                        </div>
+                      </div>
+                    ))
+                  }
+              </div>
+              </div>
             </div>
             <div className="pt-4 border-t w-full grid grid-cols-3 max-mobile:grid-cols-1 gap-[34px] text-center">
                 <div className="flex flex-col gap-1">

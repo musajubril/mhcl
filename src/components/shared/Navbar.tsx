@@ -8,15 +8,25 @@ import { Copy } from 'lucide-react'
 import { FaBars } from "react-icons/fa6";
 import { Button } from '../ui/button'
 import Link from 'next/link'
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem,NavigationMenuList, NavigationMenuTrigger } from '../ui/navigation-menu'
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     
 const navigation = [
-    { name: 'Product', href: '/' },
-    { name: 'Features', href: '/' },
-    { name: 'Marketplace', href: '/' },
-    { name: 'Company', href: '/' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/' },
+    { name: 'Services and Products', href: '/' },
+    { name: 'Careers', href: '/' },
+  ]
+  const subMenu = [
+    { name: 'Advisory', href: '/' },
+    { name: 'Consultancy', href: '/' },
+    { name: 'Training & Development', href: '/' },
+    { name: 'Energy & Natural Resources', href: '/' },
+    { name: 'Infrastructure', href: '/' },
+    { name: 'Procurement', href: '/' },
+    { name: 'Investment & trading', href: '/' },
   ]
   const logo = "/img/logo/full_logo.png"
   return (
@@ -29,9 +39,16 @@ const navigation = [
         <div className="max-mobile:hidden flex gap-12 items-center">
     <div className="flex gap-6">
         {navigation.map((item) => (
-            <Link key={item.name} href={item.href} className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
+          <div  key={item.name}>
+          {
+            item.name !== "Services and Products" ?
+            <Link href={item.href} className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
                 {item.name}
             </Link>
+            :
+            <ServicesAndProducts subMenu={subMenu} item={item} />
+            }
+          </div>
         ))}
     
     </div>
@@ -40,13 +57,13 @@ const navigation = [
     </div>
         </div>
         <div className="hidden max-mobile:flex">
-        <MobileMenu navigation={navigation} logo={logo} />
+        <MobileMenu navigation={navigation} logo={logo} subMenu={subMenu} />
         </div>
     </div>
   )
 }
 
-const MobileMenu = ({navigation, logo}: any) => {
+const MobileMenu = ({navigation, logo, subMenu}: any) => {
     return (
         <Dialog>
       <DialogTrigger asChild>
@@ -63,7 +80,12 @@ const MobileMenu = ({navigation, logo}: any) => {
             {
                 navigation.map((nav: { href: string; name: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined }, i: React.Key | null | undefined)=>(
                     <div className="p-2" key={i}>
-                    <Link href={nav.href} key={i}>{nav.name}</Link>
+                      {
+            nav.name !== "Services and Products" ?
+            <Link href={nav.href} key={i}>{nav.name}</Link>
+           :
+            <ServicesAndProducts subMenu={subMenu} item={nav} />
+          }
                     </div>
                 ))
             }
@@ -72,4 +94,33 @@ const MobileMenu = ({navigation, logo}: any) => {
       </DialogContent>
     </Dialog>
     )
+}
+
+const ServicesAndProducts = ({subMenu, item}) => {
+  return (
+    <NavigationMenu>
+      <NavigationMenuList>
+    <NavigationMenuItem>
+          <NavigationMenuTrigger>
+          <Link href={item.href} className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
+                {item.name}
+            </Link>
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {subMenu.map((menu, i) => (
+                <div
+                  key={i}
+                >
+                  <Link href={menu.href} className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
+                {menu.name}
+            </Link>
+                </div>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        </NavigationMenuList>
+        </NavigationMenu>
+  )
 }
