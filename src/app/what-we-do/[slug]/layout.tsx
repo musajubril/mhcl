@@ -1,12 +1,12 @@
-"use client"
+
 import { WhatWeDo } from '@/wwd';
-import { usePathname } from 'next/navigation'
 import React from 'react'
+import PathName from './PathName';
 
 
 interface paramsProps { slug: string };
 export default function layout({ children, params }: { children: React.ReactNode, params: { slug: string }}) {
-    const pathname = usePathname();
+   
     const slugData = WhatWeDo.find(_=> _.slug===params.slug)
         console.log(slugData)
   return (
@@ -19,9 +19,7 @@ export default function layout({ children, params }: { children: React.ReactNode
         <div className="text-d1 max-mobile:text-h1 max-mobile:w-dvw text-wrap">
         {slugData?.title}
         </div>
-        <div className="text-md">
-        Home{pathname}
-        </div>
+        <PathName />
         </div>
         </div>
         <div className="pt-24">
