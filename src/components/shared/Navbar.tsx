@@ -9,6 +9,7 @@ import { FaBars } from "react-icons/fa6";
 import { Button } from '../ui/button'
 import Link from 'next/link'
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem,NavigationMenuList, NavigationMenuTrigger } from '../ui/navigation-menu'
+import { UrlObject } from 'url'
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -96,7 +97,7 @@ const MobileMenu = ({navigation, logo, subMenu}: any) => {
     )
 }
 
-const ServicesAndProducts = ({subMenu, item}) => {
+const ServicesAndProducts = ({subMenu, item}: {subMenu:any, item: any}) => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -108,7 +109,7 @@ const ServicesAndProducts = ({subMenu, item}) => {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {subMenu.map((menu, i) => (
+              {subMenu.map((menu: { href: string | UrlObject; name: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined }, i: React.Key | null | undefined) => (
                 <div
                   key={i}
                 >
