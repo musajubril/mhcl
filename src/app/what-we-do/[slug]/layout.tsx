@@ -5,7 +5,7 @@ import React from 'react'
 
 
 interface paramsProps { slug: string };
-export default function layout({ children, params }: { children: React.ReactNode, params: paramsProps}) {
+export default function layout({ children, params }: { children: React.ReactNode, params: { slug: string }}) {
     const pathname = usePathname();
     const slugData = WhatWeDo.find(_=> _.slug===params.slug)
         console.log(slugData)
