@@ -94,7 +94,7 @@ body {
     @apply font-semibold leading-[150%] tracking-[0%];
   }
   .text-base {
-    @apply font-semibold leading-[150%] tracking-[0%];
+    @apply font-normal leading-[150%] tracking-[0%];
   }
   .text-md {
     @apply font-normal leading-[150%] tracking-[0%];

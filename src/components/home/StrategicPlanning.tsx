@@ -1,5 +1,6 @@
 import React from 'react'
 import { WhatWeDo } from '@/wwd'
+import Link from 'next/link'
 export default function StrategicPlanning() {
   return (
     <div className="px-[120px] max-mobile:px-6 py-24 flex flex-col">
@@ -18,7 +19,7 @@ export default function StrategicPlanning() {
             <>
             {
                 WhatWeDo.map((wwd, i)=>(
-            <div className="flex flex-col gap-8 bg-primary/80 hover:bg-white hover:border-primary hover:border-2 hover:text-primary rounded-lg text-[#fff] transition-all transform duration-500 hover:scale-105 items-center justify-center cursor-pointer" key={i}>
+            <Link href={`/what-we-do/${wwd.slug}`} className="flex flex-col gap-8 bg-primary/80 hover:bg-white hover:border-primary hover:border-2 hover:text-primary rounded-lg text-[#fff] transition-all transform duration-500 hover:scale-105 items-center justify-center cursor-pointer" key={i}>
                 <div className="flex flex-col gap-3 p-5 items-center justify-center text-center">
                     <div className="">
                         <wwd.icon className=' w-14 h-14' />
@@ -30,7 +31,7 @@ export default function StrategicPlanning() {
                     {/* <div className="text-base font-normal text-dark-grey">
                         {wwd.description.slice(0,135)}
                         </div> */}
-                        </div>
+                        </Link>
 
                 ))
             }

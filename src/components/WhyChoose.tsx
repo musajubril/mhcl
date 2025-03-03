@@ -15,7 +15,7 @@ export default function WhyChoose() {
   ]
   return (
     <div className="px-[120px] max-mobile:px-6 py-24 ">
-    <div className="flex max-mobile:flex-col-reverse flex-row-reverse max-mobile:gap-[50px] justify-between">
+    <div className="flex max-mobile:flex-col-reverse flex-row-reverse max-mobile:gap-[50px] gap-[156.41px]">
       <div className="relative flex items-center justify-center w-[453.59px] max-mobile:w-full">
         <div className="relative w-[355px] h-[507px]">
           <div className="absolute  w-[355px] h-[507px] inset-0 transform translate-y-[23.05px] -translate-x-[25.93px] bg-primary/20 rounded-2xl shadow-lg z-0">
@@ -32,7 +32,7 @@ export default function WhyChoose() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col max-w-[590px] max-mobile:max-w-full max-mobile:w-full">
+      <div className="flex flex-col max-mobile:max-w-full max-mobile:w-full">
           <div className="pb-3 text-primary">
               Why Choose Us
           </div>
