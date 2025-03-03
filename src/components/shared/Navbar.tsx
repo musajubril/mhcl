@@ -103,9 +103,9 @@ const ServicesAndProducts = ({subMenu, item}: {subMenu:any, item: any}) => {
       <NavigationMenuList>
     <NavigationMenuItem>
           <NavigationMenuTrigger>
-          <Link href={item.href} className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
+          <div className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
                 {item.name}
-            </Link>
+            </div>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
