@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CTA() {
   return (
-    <div className="px-[120px] max-mobile:px-6 pb-24">
+    <div className="pb-24">
     <div className='bg-no-repeat bg-center bg-cover rounded-[10px]' style={{
       backgroundImage: `url(/img/cta.jpg)`
     }}>

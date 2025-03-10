@@ -10,7 +10,7 @@ export default function HomeAboutUs() {
     {letter: "S", details: "Sustainability drives in all our dealing with our valuable clients"},
   ]
   return (
-    <div className="px-[120px] max-mobile:px-6 py-24 ">
+    <div className=" py-24 ">
       <div className="flex max-mobile:flex-col max-mobile:gap-[50px] gap-[156.41px]">
         <div className="relative flex items-center justify-center w-[453.59px] max-mobile:w-full">
           <div className="relative w-[355px] h-[507px]">

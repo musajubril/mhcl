@@ -1,4 +1,5 @@
 "use client"
+import Contact from "@/components/Contact";
 import CTA from "@/components/home/CTA";
 import Hero from "@/components/home/Hero";
 import HomeAboutUs from "@/components/home/HomeAboutUs";
@@ -15,6 +16,7 @@ export default function Home() {
     <div className="">
       
       <Hero />
+      <div className="px-[120px] max-mobile:px-6 py-24 flex flex-col">
       <PartnersAndClients />
       {/* <WhatWeDo /> */}
       <HomeAboutUs />
@@ -22,6 +24,8 @@ export default function Home() {
       <Team />
       <CTA />
       <WhyChoose />
+      <Contact />
+      </div>
 
       {/* <div className="py-8 w-full flex justify-center gap-12">
         <img src="/img/partners/aero.png" className="h-[46.32px]" alt="" />

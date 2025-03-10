@@ -3,7 +3,7 @@ import { WhatWeDo } from '@/wwd'
 import Link from 'next/link'
 export default function StrategicPlanning() {
   return (
-    <div className="px-[120px] max-mobile:px-6 py-24 flex flex-col">
+    <div className="py-24 flex flex-col">
         <div className="text-primary pb-3">
         What We Do
         </div>

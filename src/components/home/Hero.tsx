@@ -4,6 +4,7 @@ import { Button } from '../ui/button'
 import { FaFacebookF } from "react-icons/fa";
 import { FiYoutube, FiTwitter, FiLinkedin } from "react-icons/fi";
 import StackedCards from '../shared/StackedCards';
+import Link from 'next/link';
 export default function Hero() {
   return (
     <div className='px-[120px] max-mobile:px-6 pb-[100px] pt-24 max-mobile:py-5 max-mobile:pb-20'>
@@ -23,7 +24,9 @@ Energy and Infrastructure Solutions.
           </div>
           <div className="flex gap-6">
             <Button className='uppercase transition-all transform hover:scale-105 duration-300'>
+              <Link href={"/contact-us"}>
               CONTACT US
+              </Link>
             </Button>
             <Button variant={"outline"} className='text-primary border-primary uppercase hover:text-primary transition-all transform hover:scale-105 duration-300'>
               FREE CONSULT

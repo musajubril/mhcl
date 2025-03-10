@@ -14,7 +14,7 @@ export default function WhyChoose() {
     "private jet charter services (Mangrove's fly class)"
   ]
   return (
-    <div className="px-[120px] max-mobile:px-6 py-24 ">
+    <div className="py-24 ">
     <div className="flex max-mobile:flex-col-reverse flex-row-reverse max-mobile:gap-[50px] gap-[156.41px]">
       <div className="relative flex items-center justify-center w-[453.59px] max-mobile:w-full">
         <div className="relative w-[355px] h-[507px]">
