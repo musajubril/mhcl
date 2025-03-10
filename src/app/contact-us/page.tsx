@@ -14,7 +14,7 @@ export default function page() {
         backgroundImage: `url(/img/wwd.jpg)`,
       }}
     >
-      <div className="h-full w-full  py-[60px] lg:px-[137px] flex flex-col justify-center items-center text-white gap-[30px] text-center max-mobile:px-6">
+      <div className="h-full w-full bg-[#034833]/80 py-[60px] lg:px-[137px] flex flex-col justify-center items-center text-white gap-[30px] text-center max-mobile:px-6">
         <div className="text-d1 max-mobile:text-h1 max-mobile:w-dvw text-wrap">
           Contact Us
         </div>
