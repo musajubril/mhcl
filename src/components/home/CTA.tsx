@@ -14,7 +14,7 @@ export default function CTA() {
                 Every business is unique. Request a tailored solution crafted specifically for your  organization's challenges and goals.
                 </div>
                 <div className="flex items-center">
-                    <a href='mailto:Info@eagleviewltd.com' className="py-[9px] px-[18px] bg-primary rounded-[5px]">Get In Touch</a>
+                    <a href='mailto:Info@mangrovehills.com' className="py-[9px] px-[18px] bg-primary rounded-[5px]">Get In Touch</a>
                 </div>
             </div>
       </div>

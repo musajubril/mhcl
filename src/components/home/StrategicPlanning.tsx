@@ -9,6 +9,7 @@ export default function StrategicPlanning() {
         </div>
         <div className="grid grid-cols-3 max-mobile:grid-cols-1 gap-10">
             <div className="flex flex-col gap-8 max-mobile:pb-8">
+                
                 <div className="text-h1 text-black">
                 Market Insights and Analysis.
                 </div>

@@ -6,6 +6,7 @@ import PartnersAndClients from "@/components/home/PartnersAndClients";
 import StrategicPlanning from "@/components/home/StrategicPlanning";
 import WhatWeDo from "@/components/home/WhatWeDo";
 import Navbar from "@/components/shared/Navbar";
+import Team from "@/components/Team";
 import WhyChoose from "@/components/WhyChoose";
 import Image from "next/image";
 
@@ -18,6 +19,7 @@ export default function Home() {
       {/* <WhatWeDo /> */}
       <HomeAboutUs />
       <StrategicPlanning />
+      <Team />
       <CTA />
       <WhyChoose />
 

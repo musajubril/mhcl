@@ -10,15 +10,17 @@ import { Button } from '../ui/button'
 import Link from 'next/link'
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem,NavigationMenuList, NavigationMenuTrigger } from '../ui/navigation-menu'
 import { UrlObject } from 'url'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '../ui/dropdown-menu'
+import { WhatWeDo } from '@/wwd'
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     
 const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/' },
+    { name: 'About Us', href: '/about-us' },
     { name: 'Services and Products', href: '/' },
-    { name: 'Careers', href: '/' },
+    { name: 'Careers', href: '/careers' },
   ]
   const subMenu = [
     { name: 'Advisory', href: '/' },
@@ -47,7 +49,9 @@ const navigation = [
                 {item.name}
             </Link>
             :
+            <div className="relative">
             <ServicesAndProducts subMenu={subMenu} item={item} />
+            </div>
             }
           </div>
         ))}
@@ -66,62 +70,78 @@ const navigation = [
 
 const MobileMenu = ({navigation, logo, subMenu}: any) => {
     return (
-        <Dialog>
-      <DialogTrigger asChild>
-        <FaBars />
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-md h-[50dvh] justify-start !top-[1%] !translate-y-[-1%] flex flex-col !gap-5">
-        <DialogHeader className='flex justify-start items-start'>
-          <DialogTitle className='text-start flex gap-2 items-center'>
-          <img src={logo} className='h-10' alt="" />
-            </DialogTitle>
-        </DialogHeader>
-        <div className="flex items-center space-x-2">
-          <div className="grid flex-1 gap-2">
-            {
-                navigation.map((nav: { href: string; name: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined }, i: React.Key | null | undefined)=>(
-                    <div className="p-2" key={i}>
-                      {
-            nav.name !== "Services and Products" ?
-            <Link href={nav.href} key={i}>{nav.name}</Link>
-           :
-            <ServicesAndProducts subMenu={subMenu} item={nav} />
-          }
-                    </div>
-                ))
-            }
-          </div>
-        </div>
-      </DialogContent>
-    </Dialog>
+      <DropdownMenu>
+  <DropdownMenuTrigger><FaBars /></DropdownMenuTrigger>
+  <DropdownMenuContent className='w-dvw p-3'>
+    {
+       navigation.map((nav: { href: string; name: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined }, i: React.Key | null | undefined)=>(
+         <DropdownMenuItem key={i}>
+          <div className="p-2">
+                       {
+             nav.name !== "Services and Products" ?
+             <Link href={nav.href} key={i}>{nav.name}</Link>
+            :
+            <div className="relative" onClick={(e)=>e.stopPropagation()}>
+             <ServicesAndProducts subMenu={subMenu} item={nav} />
+            </div>
+           }
+                     </div>
+         </DropdownMenuItem>
+       ))
+    }
+  </DropdownMenuContent>
+</DropdownMenu>
+
+    //     <Dialog>
+    //   <DialogTrigger asChild>
+    //     <FaBars />
+    //   </DialogTrigger>
+    //   <DialogContent className="sm:max-w-md h-[50dvh] justify-start !top-[1%] !translate-y-[-1%] flex flex-col !gap-5">
+    //     <DialogHeader className='flex justify-start items-start'>
+    //       <DialogTitle className='text-start flex gap-2 items-center'>
+    //       <img src={logo} className='h-10' alt="" />
+    //         </DialogTitle>
+    //     </DialogHeader>
+    //     <div className="flex items-center space-x-2">
+    //       <div className="grid flex-1 gap-2">
+    //         {
+    //             navigation.map((nav: { href: string; name: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined }, i: React.Key | null | undefined)=>(
+    //                 <div className="p-2" key={i}>
+    //                   {
+    //         nav.name !== "Services and Products" ?
+    //         <Link href={nav.href} key={i}>{nav.name}</Link>
+    //        :
+    //         <ServicesAndProducts subMenu={subMenu} item={nav} />
+    //       }
+    //                 </div>
+    //             ))
+    //         }
+    //       </div>
+    //     </div>
+    //   </DialogContent>
+    // </Dialog>
     )
 }
 
 const ServicesAndProducts = ({subMenu, item}: {subMenu:any, item: any}) => {
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
-    <NavigationMenuItem>
-          <NavigationMenuTrigger>
+    <DropdownMenu>
+          <DropdownMenuTrigger>
           <div className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
                 {item.name}
             </div>
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {subMenu.map((menu: { href: string | UrlObject; name: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined }, i: React.Key | null | undefined) => (
-                <div
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className=''>
+              {WhatWeDo.map((menu, i: React.Key | null | undefined) => (
+                <DropdownMenuItem
                   key={i}
                 >
-                  <Link href={menu.href} className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
-                {menu.name}
+                  <Link href={`/what-we-do/${menu.slug}`} className="text-sm font-medium text-gray-900 hover:text-primary hover:border-b hover:border-primary transition-all duration-300 hover:font-semibold">
+                {menu.title}
             </Link>
-                </div>
+                </DropdownMenuItem>
               ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        </NavigationMenuList>
-        </NavigationMenu>
+          </DropdownMenuContent>
+        </DropdownMenu>
   )
 }
