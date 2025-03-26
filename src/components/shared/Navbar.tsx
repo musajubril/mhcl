@@ -153,35 +153,6 @@ const MobileMenu = ({ navigation, logo, subMenu }: any) => {
         )}
       </DropdownMenuContent>
     </DropdownMenu>
-
-    //     <Dialog>
-    //   <DialogTrigger asChild>
-    //     <FaBars />
-    //   </DialogTrigger>
-    //   <DialogContent className="sm:max-w-md h-[50dvh] justify-start !top-[1%] !translate-y-[-1%] flex flex-col !gap-5">
-    //     <DialogHeader className='flex justify-start items-start'>
-    //       <DialogTitle className='text-start flex gap-2 items-center'>
-    //       <img src={logo} className='h-10' alt="" />
-    //         </DialogTitle>
-    //     </DialogHeader>
-    //     <div className="flex items-center space-x-2">
-    //       <div className="grid flex-1 gap-2">
-    //         {
-    //             navigation.map((nav: { href: string; name: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined }, i: React.Key | null | undefined)=>(
-    //                 <div className="p-2" key={i}>
-    //                   {
-    //         nav.name !== "Services and Products" ?
-    //         <Link href={nav.href} key={i}>{nav.name}</Link>
-    //        :
-    //         <ServicesAndProducts subMenu={subMenu} item={nav} />
-    //       }
-    //                 </div>
-    //             ))
-    //         }
-    //       </div>
-    //     </div>
-    //   </DialogContent>
-    // </Dialog>
   );
 };
 

@@ -21,12 +21,6 @@ export default function Footer() {
             <div className=" text-base font-medium lg:max-w-[260px] mb-[74px]">
             Your Trusted Advisors in Business Success
             </div>
-            {/* <div className="flex justify-between">
-                <a href="https://www.linkedin.com/in/eagle-view-technology-limited-3992ba266" target="_blank" rel="noreferrer" className="flex items-center justify-center h-[50px] w-[50px] bg-white rounded-[10px] text-primary"><FaLinkedinIn className='h-5 w-5' /></a>
-                <a href="https://www.instagram.com/eagleviewtechng/" target="_blank" rel="noreferrer" className="flex items-center justify-center h-[50px] w-[50px] bg-white rounded-[10px] text-primary" ><FaInstagram className='h-5 w-5' /></a>
-                <a href="https://www.facebook.com/profile.php?id=100089945092671&mibextid=ZbWKwL" target="_blank" rel="noreferrer" className="flex items-center justify-center h-[50px] w-[50px] bg-white rounded-[10px] text-primary"><FaFacebookF className='h-5 w-5' /></a>
-                <a href="https://twitter.com/EagleView_Tech/status/1628979356440616960?t=xaPsWT3KMaVtILXKG0Z5bQ&s=19"  target="_blank" rel="noreferrer" className="flex items-center justify-center h-[50px] w-[50px] bg-white rounded-[10px] text-primary"><FaTwitter className='h-5 w-5' /></a>
-            </div> */}
             <div className="flex flex-col gap-3">
                         <div className="">
                         Follow Us On:

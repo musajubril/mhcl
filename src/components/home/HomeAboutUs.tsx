@@ -56,7 +56,7 @@ export default function HomeAboutUs() {
                 Vision
               </div>
               <div className="text-medium text-dark-grey">
-                To become an unrivaled choice for clients in their quest for excellence add to talnet, a place for career fulfillment
+                To become an unrivaled choice for clients in their quest for excellence add to talent, a place for career fulfillment
               </div>
               </div>
               <div className="">
