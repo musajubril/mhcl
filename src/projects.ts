@@ -431,15 +431,15 @@ export const ProjectsDiary = [
     status: "completed",
     imgs: ["/img/projects/project-35-plate-1.jpg", "/img/projects/project-35-plate-2.jpg"],
   },
-  {
-    title: "Tarmac access",
-    client: "Eterna plc",
-    location: "Lagos",
-    status: "completed",
-    imgs: [
-      "/img/projects/project-36-plate-1.jpg",
-      "/img/projects/project-36-plate-2.jpg",
-      "/img/projects/project-36-plate-3.jpg",
-    ],
-  },
+  // {
+  //   title: "Tarmac access",
+  //   client: "Eterna plc",
+  //   location: "Lagos",
+  //   status: "completed",
+  //   imgs: [
+  //     "/img/projects/project-36-plate-1.jpg",
+  //     "/img/projects/project-36-plate-2.jpg",
+  //     "/img/projects/project-36-plate-3.jpg",
+  //   ],
+  // },
 ];
