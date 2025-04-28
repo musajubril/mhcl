@@ -56,9 +56,9 @@ export default function Navbar() {
   return (
     <div className="py-4 px-[120px] max-mobile:px-6 flex justify-between">
       <div className="">
-        <div className="text-start flex gap-2 items-center">
+        <Link href="/" className="text-start flex gap-2 items-center">
           <img src={logo} className="h-10" alt="" />
-        </div>
+        </Link>
       </div>
       <div className="max-mobile:hidden flex gap-12 items-center">
         <div className="flex gap-6">

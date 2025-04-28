@@ -28,12 +28,9 @@ export default function page() {
       <div className="px-[120px] max-mobile:px-6 py-24 flex flex-col">
             <HomeAboutUs />
             <PartnersAndClients />
-            {/* <WhatWeDo /> */}
             <StrategicPlanning />
-            <Team />
-            {/* <CTA /> */}
+            {/* <Team /> */}
             <WhyChoose />
-            {/* <Contact /> */}
             </div>
       </div>
       </div>

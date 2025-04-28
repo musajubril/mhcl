@@ -18,20 +18,13 @@ export default function Home() {
       <Hero />
       <div className="px-[120px] max-mobile:px-6 py-24 flex flex-col">
       <PartnersAndClients />
-      {/* <WhatWeDo /> */}
       <HomeAboutUs />
       <StrategicPlanning />
-      <Team />
+      {/* <Team /> */}
       <CTA />
       <WhyChoose />
       <Contact />
       </div>
-
-      {/* <div className="py-8 w-full flex justify-center gap-12">
-        <img src="/img/partners/aero.png" className="h-[46.32px]" alt="" />
-        <img src="/img/partners/barka.png" className="h-[46.32px]" alt="" />
-        <img src="/img/partners/cjg.webp" className="h-[46.32px]" alt="" />
-      </div> */}
     </div>
   );
 }

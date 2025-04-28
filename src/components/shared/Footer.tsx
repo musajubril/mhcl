@@ -66,7 +66,7 @@ export default function Footer() {
                 </a>
                 <div className="flex items-center gap-4">
                     <BsCalendar2Day className='h-5 w-5' />
-                    <div className="">Available Mondays to Sundays</div>
+                    <div className="">Available Mondays to Fridays</div>
                 </div>
                 <div className="flex items-center gap-4">
                     <IoMdTimer className='h-5 w-5' />

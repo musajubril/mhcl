@@ -50,7 +50,7 @@ export default function WhyChoose() {
                 {
                   wcu.map((val, i) => (
                     <div key={i}>
-                      <div className="flex items-center gap-5">
+                      <div className="flex items-start gap-5">
                         <div className="text-primary font-bold">
                           <FaCheckCircle size={24} className="text-primary"/>
                         </div>

@@ -29,9 +29,6 @@ export default function StrategicPlanning() {
                     {wwd.title}
                 </div>
                 </div>
-                    {/* <div className="text-base font-normal text-dark-grey">
-                        {wwd.description.slice(0,135)}
-                        </div> */}
                         </Link>
 
                 ))

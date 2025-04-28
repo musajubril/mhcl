@@ -18,7 +18,7 @@ export default function StackedCards() {
           {/* Top Image Card */}
           <div className="relative w-[355px] h-[507px] rounded-2xl overflow-hidden shadow-lg z-10">
             <img
-              src="/img/consulting-hero.jpg"
+              src="/img/hero.jpg"
               alt="Top Image"
               className="w-full h-full object-cover"
             />
