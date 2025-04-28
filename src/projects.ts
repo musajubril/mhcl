@@ -1,0 +1,445 @@
+export const ProjectsDiary = [
+  {
+    title:
+      "Design and construction of 60,000 liters capacity mobile jet fuel storage and handling skid",
+    client: "Ibeto petrochemical limited/pebez industrial services limited",
+    location: "Anambra state",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-01-plate-1.jpg",
+      "/img/projects/project-01-plate-2.jpg",
+      "/img/projects/project-01-plate-3.jpg",
+      "/img/projects/project-01-plate-4.jpg",
+    ],
+  },
+  {
+    title:
+      "Aviation fuel equipment supply and standardization of jet fuel storage system for 2.8 million liters capacity jet fuel storage handling and into-plane depot",
+    client: "Ibeto petrochemical limited/pebez industrial services limited",
+    location: "Anambra state",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-02-plate-1.jpg",
+      "/img/projects/project-02-plate-2.jpg",
+      "/img/projects/project-02-plate-3.jpg",
+      "/img/projects/project-02-plate-4.jpg",
+    ],
+  },
+  {
+    title:
+      "Jig/ifqp/ata system standardization for 3 million liters capacity jet storage and handling depot",
+    client: "Ardova plc aviation",
+    location: "Ikeja, lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-03-plate-1.jpg",
+      "/img/projects/project-03-plate-2.jpg",
+      "/img/projects/project-03-plate-3.jpg",
+      "/img/projects/project-03-plate-4.jpg",
+    ],
+  },
+  {
+    title:
+      "Ncaa manuals (i.) work process manual (ii.) aviation fuel quality assurance and technical operations procedure manual",
+    client: "Ardova plc aviation",
+    location: "Ikeja, lagos",
+    status: "on-going",
+    imgs: ["/img/projects/project-04-plate-1.jpg", "/img/projects/project-04-plate-2.jpg"],
+  },
+  {
+    title:
+      "Owner engineering management company for the procurement of two units aircrafts refuellers (60,000 liters and 45,000 liters capacity)",
+    client: "Ardova plc aviation",
+    location: "Lagos, Nigeria, DUBAI",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-05-plate-1.jpg",
+      "/img/projects/project-05-plate-2.jpg",
+      "/img/projects/project-05-plate-3.jpg",
+      "/img/projects/project-05-plate-4.jpg",
+    ],
+  },
+  {
+    title: "Upgrade of Nigerian customs’ jet fuel dump",
+    client:
+      "Nigerian customs/rotad Nigerian limited/masfam integrated resources limited",
+    location: "Nnamdi azikiwe international airport, abuja",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-06-plate-1.jpg",
+      "/img/projects/project-06-plate-2.jpg",
+      "/img/projects/project-06-plate-3.jpg",
+      "/img/projects/project-06-plate-4.jpg",
+      "/img/projects/project-06-plate-5.jpg",
+    ],
+  },
+  {
+    title:
+      "Conversion of four (4) units of vertical ago storage tanks to jet fuel storage (project inclusive of piping and filtration system)",
+    client: "Duport midstream limited/pebez industrial services limited",
+    location: "Apapa, coastal area in lagos",
+    status: "COMPLETED",
+    imgs: [
+      "/img/projects/project-07-plate-1.jpg",
+      "/img/projects/project-07-plate-2.jpg",
+      "/img/projects/project-07-plate-3.jpg",
+      "/img/projects/project-07-plate-4.jpg",
+      "/img/projects/project-07-plate-5.jpg",
+      "/img/projects/project-07-plate-6.jpg",
+      "/img/projects/project-07-plate-7.jpg",
+      "/img/projects/project-07-plate-8.jpg",
+      "/img/projects/project-07-plate-9.jpg",
+    ],
+  },
+  {
+    title:
+      "Engineering consultancy for construction of 400,000 liters capacity aviation fuel storage and handling depot",
+    client: "Agbenu oil & gas limited",
+    location: "Abuja",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-08-plate-1.jpg",
+      "/img/projects/project-08-plate-2.jpg",
+      "/img/projects/project-08-plate-3.jpg",
+      "/img/projects/project-08-plate-4.jpg",
+      "/img/projects/project-08-plate-5.jpg",
+    ],
+  },
+  {
+    title:
+      "Engineering design, materials procurement and construction of 2 units of 50,000 liters capacity bridger receipt vehicles",
+    client: "Agbenu oil & gas limited",
+    location: "Abuja",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-09-plate-1.jpg",
+      "/img/projects/project-09-plate-2.jpg",
+      "/img/projects/project-09-plate-3.jpg",
+      "/img/projects/project-09-plate-4.jpg",
+      "/img/projects/project-09-plate-5.jpg",
+      "/img/projects/project-09-plate-6.jpg",
+    ],
+  },
+  {
+    title: "Construction of 50,000 liters capacity bridger receipt vehicle",
+    client: "Masters energy oil & gas limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-10-plate-1.jpg",
+      "/img/projects/project-10-plate-2.jpg",
+      "/img/projects/project-10-plate-3.jpg",
+      "/img/projects/project-10-plate-4.jpg",
+      "/img/projects/project-10-plate-5.jpg",
+      "/img/projects/project-10-plate-6.jpg",
+    ],
+  },
+  {
+    title:
+      "Project consultant for masters lead role in atk storage, handling and into-plane of juhi 2 depot of mmia, lagos",
+    client: "Masters energy oil & gas limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-11-plate-1.jpg",
+      "/img/projects/project-11-plate-2.jpg",
+      "/img/projects/project-11-plate-3.jpg",
+      "/img/projects/project-11-plate-4.jpg",
+    ],
+  },
+  {
+    title:
+      "Owner engineering management company for the purchase of 2 units of bowsers",
+    client: "Masters energy oil & gas limited",
+    location: "Lagos",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-12-plate-1.jpg",
+      "/img/projects/project-12-plate-2.jpg",
+      "/img/projects/project-12-plate-3.jpg",
+    ],
+  },
+  {
+    title:
+      "Owner engineering management company for the purchase of 2 units of bowsers",
+    client: "Eterna plc",
+    location: "Lagos",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-13-plate-1.jpg",
+      "/img/projects/project-13-plate-2.jpg",
+      "/img/projects/project-13-plate-3.jpg",
+      "/img/projects/project-13-plate-4.jpg",
+    ],
+  },
+  {
+    title: "Construction of 6,000 liters capacity mobile storage diesel tank",
+    client: "Masters energy oil & gas limited",
+    location: "Lagos",
+    status: "COMPLETED",
+    imgs: [
+      "/img/projects/project-14-plate-1.jpg",
+      "/img/projects/project-14-plate-2.jpg",
+      "/img/projects/project-14-plate-3.jpg",
+      "/img/projects/project-14-plate-4.jpg",
+    ],
+  },
+  {
+    title:
+      "Construction of 20,000 liters capacity mobile diesel storage system",
+    client: "Petatony limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-15-plate-1.jpg",
+      "/img/projects/project-15-plate-2.jpg",
+      "/img/projects/project-15-plate-3.jpg",
+    ],
+  },
+  {
+    title: "Filling station integrity check for 50 filling stations",
+    client: "Moman",
+    location: "Lagos",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-16-plate-1.jpg",
+      "/img/projects/project-16-plate-2.jpg",
+      "/img/projects/project-16-plate-3.jpg",
+      "/img/projects/project-16-plate-4.jpg",
+    ],
+  },
+  {
+    title: "Ap workshop",
+    client: "Ardova plc aviation",
+    location: "Lagos",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-17-plate-1.jpg",
+      "/img/projects/project-17-plate-2.jpg",
+      "/img/projects/project-17-plate-3.jpg",
+    ],
+  },
+  {
+    title: "Ap trainings",
+    client: "Ardova plc aviation",
+    location: "Lagos",
+    status: "ON-GOING",
+    imgs: [
+      "/img/projects/project-18-plate-1.jpg",
+      "/img/projects/project-18-plate-2.jpg",
+      "/img/projects/project-18-plate-3.jpg",
+    ],
+  },
+  {
+    title: "Agbenu trainings",
+    client: "Agbenu oil & gas limited",
+    location: "Abuja",
+    status: "COMPLETED",
+    imgs: [
+      "/img/projects/project-19-plate-1.jpg",
+      "/img/projects/project-19-plate-2.jpg",
+      "/img/projects/project-19-plate-3.jpg",
+      "/img/projects/project-19-plate-4.jpg",
+    ],
+  },
+  {
+    title:
+      "Owner-appointed project management company for the sale of five (5) nos. transport services limited bowsers",
+    client: "Transport services limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-20-plate-1.jpg",
+      "/img/projects/project-20-plate-2.jpg",
+      "/img/projects/project-20-plate-3.jpg",
+      "/img/projects/project-20-plate-4.jpg",
+      "/img/projects/project-20-plate-5.jpg",
+      "/img/projects/project-20-plate-6.jpg",
+    ],
+  },
+  {
+    title:
+      "Hands-on maintenance support services to Juhi-2 ventures limited for her jet fuel tanks’ soak test and commissioning project at MMIA, Lagos",
+    client: "Juhi-2 ventures limited/masters energy oil & gas limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-21-plate-1.jpg",
+      "/img/projects/project-21-plate-2.jpg",
+      "/img/projects/project-21-plate-3.jpg",
+      "/img/projects/project-21-plate-4.jpg",
+      "/img/projects/project-21-plate-5.jpg",
+    ],
+  },
+  {
+    title:
+      "Ncaa manuals (i.) aviation operations manual (ii.) emergency response plan (iii.) aviation fuel quality control manual (iv.) aviation fuel cashes manual",
+    client: "Eterna plc",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-22-plate-1.jpg",
+      "/img/projects/project-22-plate-2.jpg",
+      "/img/projects/project-22-plate-3.jpg",
+      "/img/projects/project-22-plate-4.jpg",
+    ],
+  },
+  {
+    title: "Technical support",
+    client: "Eterna plc",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-23-plate-1.jpg",
+      "/img/projects/project-23-plate-2.jpg",
+      "/img/projects/project-23-plate-3.jpg",
+      "/img/projects/project-23-plate-4.jpg",
+    ],
+  },
+  {
+    title: "Masters training",
+    client: "Masters energy oil & gas limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-24-plate-1.jpg",
+      "/img/projects/project-24-plate-2.jpg",
+      "/img/projects/project-24-plate-3.jpg",
+    ],
+  },
+  {
+    title:
+      "Ncaa manuals (i.) aviation operations manual (ii.) emergency response plan (iii.) aviation fuel quality control manual (iv.) aviation fuel cashes manual",
+    client: "Masters energy oil & gas limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-25-plate-1.jpg",
+      "/img/projects/project-25-plate-2.jpg",
+      "/img/projects/project-25-plate-3.jpg",
+      "/img/projects/project-25-plate-4.jpg",
+    ],
+  },
+  {
+    title: "Project one (1) - OSCP",
+    client: "Juhi-2 ventures limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: ["/img/projects/project-26-plate-1.jpg", "/img/projects/project-26-plate-2.jpg"],
+  },
+  {
+    title:
+      "Project two (2) –faan manuals (i.) safety management system manual (ii.) quality manual (iii.) operations manual (iv.) maintenance manual (v.) emergency response manual (vi.) training manual",
+    client: "Juhi-2 ventures limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-27-plate-1.jpg",
+      "/img/projects/project-27-plate-2.jpg",
+      "/img/projects/project-27-plate-3.jpg",
+      "/img/projects/project-27-plate-4.jpg",
+      "/img/projects/project-27-plate-5.jpg",
+      "/img/projects/project-27-plate-6.jpg",
+      "/img/projects/project-27-plate-7.jpg",
+    ],
+  },
+  {
+    title:
+      "Pipeline and tank integrity for the construction of 9 nos. 3.2m liters capacity vertical tanks at masters energy coastal depot at iwofe, port harcourt",
+    client: "Masters energy oil & gas limited",
+    location: "Lagos",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-28-plate-1.jpg",
+      "/img/projects/project-28-plate-2.jpg",
+      "/img/projects/project-28-plate-3.jpg",
+      "/img/projects/project-28-plate-4.jpg",
+      "/img/projects/project-28-plate-5.jpg",
+    ],
+  },
+  {
+    title: "Construction of 240,000 liters capacity skid",
+    client: "Masters energy oil & gas limited",
+    location: "Port Harcourt",
+    status: "on-going",
+    imgs: [
+      "/img/projects/project-29-plate-1.jpg",
+      "/img/projects/project-29-plate-2.jpg",
+      "/img/projects/project-29-plate-3.jpg",
+      "/img/projects/project-29-plate-4.jpg",
+      "/img/projects/project-29-plate-5.jpg",
+      "/img/projects/project-29-plate-6.jpg",
+      "/img/projects/project-29-plate-7.jpg",
+      "/img/projects/project-30-plate-1.jpg",
+      "/img/projects/project-30-plate-2.jpg",
+      "/img/projects/project-30-plate-3.jpg",
+    ],
+  },
+  {
+    title: "Aviation business workshop",
+    client: "Eterna plc",
+    location: "Lagos",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-31-plate-1.jpg",
+      "/img/projects/project-31-plate-2.jpg",
+      "/img/projects/project-31-plate-3.jpg",
+    ],
+  },
+  {
+    title: "Ardova coastal inspection",
+    client: "Ardova plc",
+    location: "Lagos",
+    status: "COMPLETED",
+    imgs: [
+      "/img/projects/project-32-plate-1.jpg",
+      "/img/projects/project-32-plate-2.jpg",
+      "/img/projects/project-32-plate-3.jpg",
+    ],
+  },
+  {
+    title: "Agbenu oil and gas limited depot construction",
+    client: "Agbenu oil and gas limited",
+    location: "Abuja",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-33-plate-1.jpg",
+      "/img/projects/project-33-plate-2.jpg",
+      "/img/projects/project-33-plate-3.jpg",
+      "/img/projects/project-33-plate-4.jpg",
+      "/img/projects/project-33-plate-5.jpg",
+      "/img/projects/project-33-plate-6.jpg",
+      "/img/projects/project-33-plate-7.jpg",
+    ],
+  },
+  {
+    title: "Conversion of Dpk tank to atk",
+    client: "Masters energy oil and gas limited",
+    location: "Port Harcourt",
+    status: "ON-GOING",
+    imgs: [
+      "/img/projects/project-34-plate-1.jpg",
+      "/img/projects/project-34-plate-2.jpg",
+      "/img/projects/project-34-plate-3.jpg",
+      "/img/projects/project-34-plate-4.jpg",
+    ],
+  },
+  {
+    title: "Tarmac access",
+    client: "Masters energy oil and gas limited",
+    location: "Lagos",
+    status: "completed",
+    imgs: ["/img/projects/project-35-plate-1.jpg", "/img/projects/project-35-plate-2.jpg"],
+  },
+  {
+    title: "Tarmac access",
+    client: "Eterna plc",
+    location: "Lagos",
+    status: "completed",
+    imgs: [
+      "/img/projects/project-36-plate-1.jpg",
+      "/img/projects/project-36-plate-2.jpg",
+      "/img/projects/project-36-plate-3.jpg",
+    ],
+  },
+];

@@ -41,6 +41,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
     { name: "Services and Products", href: "/" },
+    { name: "Projects Diary", href: "/projects" },
     { name: "Careers", href: "/careers" },
   ];
   const subMenu = [

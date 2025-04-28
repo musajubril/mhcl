@@ -42,6 +42,7 @@ export default function Contact() {
             {type: 'number', id: 'phone', placeholder: 'Phone Number'},
           ].map((inp) => (
             <Input
+            key={inp.id}
             onChange={handleChange}
               type={inp.type}
               className="h-[50px] rounded-[10px] p-[15px] placeholder-[#252525] text-[#252525] bg-[#f7f7f7] focus-within:border-[#0e1f51] focus:border-[#0e1f51] active:border-[#0e1f51]"
